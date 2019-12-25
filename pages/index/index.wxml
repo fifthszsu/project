@@ -1,0 +1,170 @@
+<!--index.wxml-->
+<template name="buttonTemp">
+  <view>
+    <button class="buttonsp" display="flex" flex-direction="row" hover-class='button-hover' style="width:185rpx;height:100rpx"data-s="{{triger}}" data-l="{{length}}" bindtap="clickOption">{{name}}</button>
+  </view>
+</template>
+
+<template name="optionTemp">
+  <view class="outter" style="position: absolute;top: 300rpx;">
+    <view>
+    <button plain='true'class="buttonImg" style="width:200rpx;height:200rpx"> <image catchtap="clickPic" src='{{cloudPic1}}' data-imgsrc='{{cloudPic1}}' data-s='1' class="image" wx:if="{{Pic1}}"></image></button>
+    </view>
+    <view>
+    <button plain='true'class="buttonImg" style="width:200rpx;height:200rpx"> <image catchtap="clickPic" src='{{cloudPic2}}' data-imgsrc='{{cloudPic2}}' data-s='2'class="image" wx:if="{{Pic2}}"></image></button>
+    </view>
+  </view>
+</template>
+
+<view class="outter" >
+  <view wx:for="{{titleInfo}}" wx:key="key">
+    <template is="buttonTemp" data="{{...titleInfo[index]}}"></template>
+  </view>
+</view>
+
+<block wx:if="{{mainhand1}}">
+  <view class="outter" style="position: absolute;top: 300rpx;">
+    <view wx:if="{{Pic1}}">
+    <button plain='true'class="buttonImg" style="width:200rpx;height:200rpx"> <image catchtap="clickPic" src='{{cloudPic1}}' data-imgsrc='{{cloudPic1}}' data-s='1' class="image"></image></button>
+    </view>
+    <view wx:if="{{Pic2}}">
+    <button plain='true'class="buttonImg" style="width:200rpx;height:200rpx"> <image catchtap="clickPic" src='{{cloudPic2}}' data-imgsrc='{{cloudPic2}}' data-s='2'class="image"></image></button>
+    </view>
+  </view>
+</block>
+<block wx:if="{{lefthand2}}">
+  <view class="outter" style="position: absolute;top: 300rpx;">
+    <view wx:if="{{Pic1}}">
+    <button plain='true'class="buttonImg" style="width:200rpx;height:200rpx"> <image catchtap="clickPic" src='{{cloudPic1}}' data-imgsrc='{{cloudPic1}}' data-s='1' class="image"></image></button>
+    </view>
+    <view wx:if="{{Pic2}}">
+    <button plain='true'class="buttonImg" style="width:200rpx;height:200rpx"> <image catchtap="clickPic" src='{{cloudPic2}}' data-imgsrc='{{cloudPic2}}' data-s='2'class="image"></image></button>
+    </view>
+  </view>
+</block>
+
+<block wx:if="{{crown3}}">
+  <view class="outter" style="position: absolute;top: 300rpx;">
+    <view wx:if="{{Pic1}}">
+    <button plain='true'class="buttonImg" style="width:200rpx;height:200rpx"> <image catchtap="clickPic" src='{{cloudPic1}}' data-imgsrc='{{cloudPic1}}' data-s='1' class="image"></image></button>
+    </view>
+    <view wx:if="{{Pic2}}">
+    <button plain='true'class="buttonImg" style="width:200rpx;height:200rpx"> <image catchtap="clickPic" src='{{cloudPic2}}' data-imgsrc='{{cloudPic2}}' data-s='2'class="image"></image></button>
+    </view>
+  </view>
+</block>
+
+<block wx:if="{{hair4}}">
+  <view class="outter" style="position: absolute;top: 300rpx;">
+    <view wx:if="{{Pic1}}">
+    <button plain='true'class="buttonImg" style="width:200rpx;height:200rpx"> <image catchtap="clickPic" src='{{cloudPic1}}' data-imgsrc='{{cloudPic1}}' data-s='1' class="image"></image></button>
+    </view>
+    <view wx:if="{{Pic2}}">
+    <button plain='true'class="buttonImg" style="width:200rpx;height:200rpx"> <image catchtap="clickPic" src='{{cloudPic2}}' data-imgsrc='{{cloudPic2}}' data-s='2'class="image"></image></button>
+    </view>
+  </view>
+</block>
+
+<block wx:if="{{face5}}">
+  <view class="outter" style="position: absolute;top: 300rpx;">
+    <view wx:if="{{Pic1}}">
+    <button plain='true'class="buttonImg" style="width:200rpx;height:200rpx"> <image catchtap="clickPic" src='{{cloudPic1}}' data-imgsrc='{{cloudPic1}}' data-s='1' class="image"></image></button>
+    </view>
+    <view wx:if="{{Pic2}}">
+    <button plain='true'class="buttonImg" style="width:200rpx;height:200rpx"> <image catchtap="clickPic" src='{{cloudPic2}}' data-imgsrc='{{cloudPic2}}' data-s='2'class="image"></image></button>
+    </view>
+  </view>
+</block>
+<block wx:if="{{facePic6}}">
+  <view class="outter" style="position: absolute;top: 300rpx;">
+    <view wx:if="{{Pic1}}">
+    <button plain='true'class="buttonImg" style="width:200rpx;height:200rpx"> <image catchtap="clickPic" src='{{cloudPic1}}' data-imgsrc='{{cloudPic1}}' data-s='1' class="image"></image></button>
+    </view>
+    <view wx:if="{{Pic2}}">
+    <button plain='true'class="buttonImg" style="width:200rpx;height:200rpx"> <image catchtap="clickPic" src='{{cloudPic2}}' data-imgsrc='{{cloudPic2}}' data-s='2'class="image"></image></button>
+    </view>
+  </view>
+</block>
+
+<block wx:if="{{shoulder7}}">
+  <view class="outter" style="position: absolute;top: 300rpx;">
+    <view wx:if="{{Pic1}}">
+    <button plain='true'class="buttonImg" style="width:200rpx;height:200rpx"> <image catchtap="clickPic" src='{{cloudPic1}}' data-imgsrc='{{cloudPic1}}' data-s='1' class="image"></image></button>
+    </view>
+    <view wx:if="{{Pic2}}">
+    <button plain='true'class="buttonImg" style="width:200rpx;height:200rpx"> <image catchtap="clickPic" src='{{cloudPic2}}' data-imgsrc='{{cloudPic2}}' data-s='2'class="image"></image></button>
+    </view>
+  </view>
+</block>
+
+<block wx:if="{{bianzi8}}">
+  <view class="outter" style="position: absolute;top: 300rpx;">
+    <view wx:if="{{Pic1}}">
+    <button plain='true'class="buttonImg" style="width:200rpx;height:200rpx"> <image catchtap="clickPic" src='{{cloudPic1}}' data-imgsrc='{{cloudPic1}}' data-s='1' class="image"></image></button>
+    </view>
+    <view wx:if="{{Pic2}}">
+    <button plain='true'class="buttonImg" style="width:200rpx;height:200rpx"> <image catchtap="clickPic" src='{{cloudPic2}}' data-imgsrc='{{cloudPic2}}' data-s='2'class="image"></image></button>
+    </view>
+  </view>
+</block>
+<block wx:if="{{head9}}">
+  <view class="outter" style="position: absolute;top: 300rpx;">
+    <view wx:if="{{Pic1}}">
+    <button plain='true'class="buttonImg" style="width:200rpx;height:200rpx"> <image catchtap="clickPic" src='{{cloudPic1}}' data-imgsrc='{{cloudPic1}}' data-s='1' class="image"></image></button>
+    </view>
+    <view wx:if="{{Pic2}}">
+    <button plain='true'class="buttonImg" style="width:200rpx;height:200rpx"> <image catchtap="clickPic" src='{{cloudPic2}}' data-imgsrc='{{cloudPic2}}' data-s='2'class="image"></image></button>
+    </view>
+  </view>
+</block>
+<block wx:if="{{cloth10}}">
+  <view class="outter" style="position: absolute;top: 300rpx;">
+    <view wx:if="{{Pic1}}">
+    <button plain='true'class="buttonImg" style="width:200rpx;height:200rpx"> <image catchtap="clickPic" src='{{cloudPic1}}' data-imgsrc='{{cloudPic1}}' data-s='1' class="image"></image></button>
+    </view>
+    <view wx:if="{{Pic2}}">
+    <button plain='true'class="buttonImg" style="width:200rpx;height:200rpx"> <image catchtap="clickPic" src='{{cloudPic2}}' data-imgsrc='{{cloudPic2}}' data-s='2'class="image"></image></button>
+    </view>
+  </view>
+</block>
+
+<block wx:if="{{body11}}">
+  <view class="outter" style="position: absolute;top: 300rpx;">
+    <view wx:if="{{Pic1}}">
+    <button plain='true'class="buttonImg" style="width:200rpx;height:200rpx"> <image catchtap="clickPic" src='{{cloudPic1}}' data-imgsrc='{{cloudPic1}}' data-s='1' class="image"></image></button>
+    </view>
+    <view wx:if="{{Pic2}}">
+    <button plain='true'class="buttonImg" style="width:200rpx;height:200rpx"> <image catchtap="clickPic" src='{{cloudPic2}}' data-imgsrc='{{cloudPic2}}' data-s='2'class="image"></image></button>
+    </view>
+  </view>
+</block>
+
+<block wx:if="{{background12}}">
+  <view class="outter" style="position: absolute;top: 300rpx;">
+    <view wx:if="{{Pic1}}">
+    <button plain='true'class="buttonImg" style="width:200rpx;height:200rpx"> <image catchtap="clickPic" src='{{cloudPic1}}' data-imgsrc='{{cloudPic1}}' data-s='1' class="image"></image></button>
+    </view>
+    <view wx:if="{{Pic2}}">
+    <button plain='true'class="buttonImg" style="width:200rpx;height:200rpx"> <image catchtap="clickPic" src='{{cloudPic2}}' data-imgsrc='{{cloudPic2}}' data-s='2'class="image"></image></button>
+    </view>
+  </view>
+</block>
+
+  <view class="show_block" style="position: absolute;top: 500rpx;">
+    <image class="bg" src="{{background}}" />
+    <image class="img" src="{{body}}" />
+    <image class="img" src="{{cloth}}" />
+    <image class="img" src="{{head}}" />
+    <image class="img" src="{{bianzi}}" />
+    <image class="img" src="{{shoulder}}" />
+    <image class="img" src="{{facePic}}" />
+    <image class="img" src="{{face}}" />
+    <image class="img" src="{{hair}}" />
+    <image class="img" src="{{crown}}" />
+    <image class="img" src="{{lefthand}}" />
+    <image class="img" src="{{mainhand}}" />
+  </view>
+  <view>
+    <button class="buttonce" hover-class='button-hover' style="width:200rpx;height:100rpx;position: absolute;top: 1150rpx;"bindtap="generatePic">生成</button>
+    <canvas class="myCanvas" canvas-id="shareCanvas" style="position: absolute;top:2000rpx;"></canvas>
+  </view>
